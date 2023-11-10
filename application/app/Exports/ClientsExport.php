@@ -51,6 +51,9 @@ class ClientsExport implements FromCollection, WithHeadings, WithMapping {
                     case 'client_company_name':
                         $map[] = $clients->client_company_name;
                         break;
+                    case 'client_company_cnpj':
+                        $map[] = $clients->client_company_cnpj;
+                        break;
                     case 'client_created':
                         $map[] = runtimeDate($clients->client_created);
                         break;
@@ -140,6 +143,7 @@ class ClientsExport implements FromCollection, WithHeadings, WithMapping {
         //lang - standard fields
         $standard_lang = [
             'client_company_name' => __('lang.client_name'),
+            'client_company_cnpj' => __('lang.company_cnpj'),
             'client_created' => __('lang.date_created'),
             'category' => __('lang.category'),
             'contact_name' => __('lang.contact_name'),

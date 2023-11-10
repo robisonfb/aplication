@@ -273,7 +273,9 @@ class Authenticate extends Controller {
         $validator = Validator::make(request()->all(), [
             'first_name' => 'required',
             'last_name' => 'required',
+            'client_cpf_or_rg' => 'required',
             'client_company_name' => 'required',
+            'client_company_cnpj' =>'required|size:14',
             'password' => 'required|confirmed|min:6',
             'email' => 'email|required|unique:users,email',
         ], $messages);

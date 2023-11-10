@@ -54,6 +54,9 @@ class ClientStoreValidation extends FormRequest {
                 'last_name' => [
                     'required',
                 ],
+                'client_cpf_or_rg' => [
+                    'required',
+                ],
                 'email' => [
                     'required',
                     'email',
@@ -75,6 +78,10 @@ class ClientStoreValidation extends FormRequest {
         $rules += [
             'client_company_name' => [
                 'required',
+            ],
+            'client_company_cnpj' => [
+                'required',
+                'size:14',
             ],
         ];
 

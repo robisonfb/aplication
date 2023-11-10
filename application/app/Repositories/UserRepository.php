@@ -259,6 +259,7 @@ class UserRepository {
         $user->email = request('email');
         $user->first_name = request('first_name');
         $user->last_name = request('last_name');
+        $user->client_cpf_or_rg = request('client_cpf_or_rg');
         $user->phone = request('phone');
         $user->position = request('position');
         $user->role_id = request('role_id');
@@ -335,6 +336,7 @@ class UserRepository {
         $user->email = request('email');
         $user->first_name = request('first_name');
         $user->last_name = request('last_name');
+        $user->client_cpf_or_rg = request('client_cpf_or_rg');
         $user->role_id = 2;
         $user->creatorid = 0;
         $user->account_owner = 'yes';
@@ -373,6 +375,7 @@ class UserRepository {
         $user->email = request('email');
         $user->first_name = request('first_name');
         $user->last_name = request('last_name');
+        $user->client_cpf_or_rg = request('client_cpf_or_rg');
         $user->position = request('position');
         $user->phone = request('phone');
         $user->social_facebook = request('social_facebook');

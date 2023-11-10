@@ -30,7 +30,14 @@
                 name="client_company_name" placeholder="" value="{{ $lead->lead_company_name ?? '' }}">
         </div>
     </div>
-
+    <div class="form-group row">
+        <label
+                class="col-sm-12 col-lg-3 text-left control-label col-form-label required">{{ cleanLang(__('lang.company_cnpj')) }}*</label>
+        <div class="col-sm-12 col-lg-9">
+            <input type="text" class="form-control form-control-sm" id="client_company_cnpj"
+                   name="client_company_cnpj" placeholder="" value="{{ $lead->client_company_cnpj ?? '' }}">
+        </div>
+    </div>
     <!--email-->
     <div class="form-group row">
         <label

@@ -1,0 +1,5 @@
+/.fleet
+/.idea
+/.vscode
+.DS_Store
+application/storage/framework/views

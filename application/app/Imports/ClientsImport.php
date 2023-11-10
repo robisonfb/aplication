@@ -29,6 +29,7 @@ class ClientsImport implements ToModel, WithStartRow, WithHeadingRow, WithValida
         return new Client([
             'client_importid' => request('import_ref'),
             'client_company_name' => $row['companyname'] ?? '',
+            'client_company_cnpj' => $row['companycnpj'] ?? '',
             'client_phone' => $row['phone'] ?? '',
             'client_website' => $row['Website'] ?? '',
             'client_billing_street' => $row['billingstreet'] ?? '',

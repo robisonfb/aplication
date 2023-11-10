@@ -51,6 +51,9 @@ class LeadConvert extends FormRequest {
                 'required',
                 new NoTags,
             ],
+            'client_cpf_or_rg' => [
+                'required',
+            ],
             'email' => [
                 'required',
                 'email',
@@ -58,6 +61,10 @@ class LeadConvert extends FormRequest {
             'client_company_name' => [
                 'required',
                 new NoTags,
+            ],
+            'client_company_cnpj' => [
+                'required',
+                'size:14',
             ],
             'phone' => [
                 'nullable',

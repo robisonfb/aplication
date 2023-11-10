@@ -234,6 +234,7 @@ class ClientRepository {
          * ----------------------------------------------*/
         $client->client_creatorid = Auth()->user()->id;
         $client->client_company_name = request('client_company_name');
+        $client->client_company_cnpj = request('client_company_cnpj');
         $client->client_description = request('client_description');
         $client->client_phone = request('client_phone');
         $client->client_website = request('client_website');
@@ -330,6 +331,7 @@ class ClientRepository {
 
         //data
         $client->client_company_name = request('client_company_name');
+        $client->client_company_cnpj = request('client_company_cnpj');
         $client->client_creatorid = 0;
 
         //save and return id
@@ -356,6 +358,7 @@ class ClientRepository {
 
         //general
         $client->client_company_name = request('client_company_name');
+        $client->client_company_cnpj = request('client_company_cnpj');
         $client->client_phone = request('client_phone');
         $client->client_website = request('client_website');
         $client->client_vat = request('client_vat');

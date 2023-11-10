@@ -29,6 +29,13 @@
             </div>
         </div>
         <div class="form-group row">
+            <label class="col-sm-12 col-lg-3 text-left control-label col-form-label required">{{ cleanLang(__('lang.cpf_or_rg')) }}*</label>
+            <div class="col-sm-12 col-lg-9">
+                <input type="text" class="form-control form-control-sm" id="client_cpf_or_rg" name="client_cpf_or_rg"
+                       value="{{ $user->client_cpf_or_rg ?? '' }}">
+            </div>
+        </div>
+        <div class="form-group row">
             <label class="col-sm-12 col-lg-3 text-left control-label col-form-label required">{{ cleanLang(__('lang.email_address')) }}*</label>
             <div class="col-sm-12 col-lg-9">
                 <input type="text" class="form-control form-control-sm" id="email" name="email"

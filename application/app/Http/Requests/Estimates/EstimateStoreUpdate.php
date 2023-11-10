@@ -72,6 +72,9 @@ class EstimateStoreUpdate extends FormRequest {
                 'client_company_name' => [
                     'required',
                 ],
+                'client_company_cnpj' => [
+                    'required',
+                ],
                 'first_name' => [
                     'required',
                 ],

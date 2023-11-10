@@ -80,6 +80,7 @@ class TemplateSaved extends Mailable {
             'first_name' => $this->user->first_name,
             'last_name' => $this->user->last_name,
             'client_company_name' => $this->user->client_company_name,
+            'client_company_cnpj' => $this->user->client_company_cnpj,
             'foo' => runtimeDate($this->obj->bar),
             'foo' => $this->obj->bar,
         ];

@@ -112,6 +112,7 @@ class TicketsExport implements FromCollection, WithHeadings, WithMapping {
         $standard_lang = [
             'ticket_id' => __('lang.id'),
             'client_company_name' => __('lang.client_name'),
+            'client_company_cnpj' => __('lang.company_cnpj'),
             'created_by_name' => __('lang.created_by_name'),
             'created_by_email' => __('lang.created_by_email'),
             'category_name' => __('lang.department'),

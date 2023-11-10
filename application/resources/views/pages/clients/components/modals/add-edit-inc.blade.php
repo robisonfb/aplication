@@ -10,7 +10,14 @@
                     name="client_company_name" value="{{ $client->client_company_name ?? '' }}">
             </div>
         </div>
-
+        <div class="form-group row">
+            <label
+                    class="col-sm-12 col-lg-3 text-left control-label col-form-label required">{{ cleanLang(__('lang.company_cnpj')) }}*</label>
+            <div class="col-sm-12 col-lg-9">
+                <input type="text" class="form-control form-control-sm" id="client_company_cnpj"
+                       name="client_company_cnpj" value="{{ $client->client_company_cnpj ?? '' }}">
+            </div>
+        </div>
 
 
         @if(isset($page['section']) && $page['section'] == 'edit' && auth()->user()->is_team)
@@ -62,6 +69,13 @@
                 class="col-sm-12 col-lg-3 text-left control-label col-form-label required">{{ cleanLang(__('lang.last_name')) }}*</label>
             <div class="col-sm-12 col-lg-9">
                 <input type="text" class="form-control form-control-sm" id="last_name" name="last_name" placeholder="">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label
+               class="col-sm-12 col-lg-3 text-left control-label col-form-label required">{{ cleanLang(__('lang.cpf_or_rg')) }}*</label>
+            <div class="col-sm-12 col-lg-9">
+                <input type="text" class="form-control form-control-sm" id="client_cpf_or_rg" name="client_cpf_or_rg" placeholder="">
             </div>
         </div>
         <div class="form-group row">

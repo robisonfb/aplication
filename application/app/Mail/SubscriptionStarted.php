@@ -85,6 +85,7 @@ class SubscriptionStarted extends Mailable {
             'first_name' => $this->user->first_name,
             'last_name' => $this->user->last_name,
             'client_company_name' => $this->obj->client_company_name,
+            'client_company_cnpj' => $this->obj->client_company_cnpj,
             'subscription_id' => $this->obj->subscription_id,
             'subscription_plan' => $this->obj->subscription_gateway_product_name,
             'subscription_url' => url('/subscriptions/' . $this->obj->subscription_id),

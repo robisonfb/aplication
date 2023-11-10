@@ -49,7 +49,14 @@
                             name="client_company_name">
                     </div>
                 </div>
-
+                <div class="form-group row">
+                    <label
+                            class="col-sm-12 col-lg-4 text-left control-label col-form-label required">{{ cleanLang(__('lang.company_cnpj')) }}*</label>
+                    <div class="col-sm-12 col-lg-8">
+                        <input type="text" class="form-control form-control-sm" id="client_company_cnpj"
+                               name="client_company_cnpj">
+                    </div>
+                </div>
                 <div class="form-group row">
                     <label
                         class="col-sm-12 col-lg-4 text-left control-label col-form-label required">{{ cleanLang(__('lang.first_name')) }}*</label>
